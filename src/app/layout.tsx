@@ -13,10 +13,19 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "AKNOA",
-    description: "サブスク管理と固定費見直しのための生活改善ツール",
+    description:
+      "サブスク管理・固定費の見直し・健康管理をひとつにまとめた生活改善ツール",
     siteName: "AKNOA",
     locale: "ja_JP",
     type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "AKNOA",
+    description:
+      "サブスク管理・固定費の見直し・健康管理をひとつにまとめた生活改善ツール",
+    images: ["/opengraph-image.png"],
   },
 };
 
