@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/Footer";
 
+import { GoogleAnalytics } from "@next/third-parties/google";
+
 export const metadata: Metadata = {
   verification: {
     google: "GDM-OXt80OExZSfRu7mhqXPOX6ZiPWzrt2tdurbrATs",
@@ -44,6 +46,7 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-XR701WQZQV" />
     </html>
   );
 }
