@@ -3,6 +3,10 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
+  verification: {
+    google: "GDM-OXt80OExZSfRu7mhqXPOX6ZiPWzrt2tdurbrATs",
+  },
+
   title: "AKNOA",
   description:
     "AKNOAは、固定費管理・健康管理・生活改善をサポートする便利ツールWebアプリです。",
