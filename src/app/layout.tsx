@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 import { GoogleAnalytics } from "@next/third-parties/google";
@@ -43,6 +44,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body>
+        <Header />
         {children}
         <Footer />
         <GoogleAnalytics gaId="G-XR701WQZQV" />
