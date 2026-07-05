@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 
-import { Plus, LayoutDashboard } from "lucide-react";
+import { Plus, CreditCard } from "lucide-react";
 
 import { services } from "@/data/services";
 
-import SubscriptionModal from "@/components/subscriptions/SubscriptionModal";
-import SubscriptionCard from "@/components/subscriptions/SubscriptionCard";
-import SummaryCard from "@/components/subscriptions/SummaryCard";
+import SubscriptionModal from "@/features/subscriptions/components/SubscriptionModal";
+import SubscriptionCard from "@/features/subscriptions/components/SubscriptionCard";
+import SummaryCard from "@/features/subscriptions/components/SummaryCard";
 
 import { useSubscriptions } from "@/features/subscriptions/hooks/useSubscriptions";
 
@@ -66,16 +66,16 @@ export default function SubscriptionPage() {
     <main className="min-h-screen bg-white px-6 py-10 text-zinc-900">
       <div className="mx-auto max-w-5xl">
         {/* header */}
-        <div className="mb-10 flex items-center justify-between">
-          <div>
-            <p className="text-sm tracking-[0.3em] text-cyan-600">AKNOA</p>
+        <div className="mb-10">
+          <div className="flex items-center gap-3">
+            <CreditCard size={32} className="text-cyan-600" />
 
-            <div className="mt-2 flex items-center gap-3">
-              <LayoutDashboard size={32} className="text-cyan-600" />
-
-              <h1 className="text-4xl font-bold">ダッシュボード</h1>
-            </div>
+            <h1 className="text-4xl font-bold">サブスク管理</h1>
           </div>
+
+          <p className="mt-2 text-zinc-500">
+            毎月・年間のサブスク支出をひと目で確認できます。
+          </p>
         </div>
 
         {/* total */}

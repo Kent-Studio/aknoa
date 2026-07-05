@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://aknoa.vercel.app"),
+
   verification: {
     google: "GDM-OXt80OExZSfRu7mhqXPOX6ZiPWzrt2tdurbrATs",
   },
